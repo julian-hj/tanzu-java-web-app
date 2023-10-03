@@ -1,5 +1,5 @@
 LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
-NAMESPACE = os.getenv("NAMESPACE", default='default')
+NAMESPACE = os.getenv("NAMESPACE", default='my-apps')
 WAIT_TIMEOUT = os.getenv("WAIT_TIMEOUT", default='10m00s')
 TYPE = os.getenv("TYPE", default='web')
 
