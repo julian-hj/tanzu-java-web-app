@@ -1,0 +1,20 @@
+id: aa381a03-500c-4303-b1c6-efe025ec72d9
+timestamp: 2023-10-03T22:02:31.308Z
+source: TAP-GUI
+username: julian-hj
+accelerator:
+  name: tanzu-java-web-app
+fragments:
+  - name: build-wrapper-gradle
+  - name: build-wrapper-maven
+  - name: devcontainer
+  - name: java-version
+  - name: tap-workload
+options:
+  projectName: tanzu-java-web-app
+  buildTool: maven
+  springBootVersion: 2.7
+  nativeBuild: false
+  javaVersion: 11
+  includeBuildToolWrapper: true
+  includeDevContainer: false
