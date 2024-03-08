@@ -1,0 +1,18 @@
+apiVersion: servicebinding.io/v1beta1
+kind: ServiceBinding
+metadata:
+  labels:
+    app.kubernetes.io/component: run
+    app.kubernetes.io/part-of: tanzu-java-web-app
+  name: greeting-db
+  namespace: my-apps
+spec:
+  name: db
+  service:
+    apiVersion: services.apps.tanzu.vmware.com/v1alpha1
+    kind: ClassClaim
+    name: my-redis
+  workload:
+    apiVersion: serving.knative.dev/v1
+    kind: Service
+    name: greeter-messages
