@@ -20,4 +20,4 @@ spec:
     git:
       url: https://github.com/julian-hj/tanzu-java-web-app
       ref:
-        branch: main
+        branch: broken

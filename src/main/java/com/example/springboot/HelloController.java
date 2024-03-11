@@ -8,7 +8,8 @@ public class HelloController {
 
 	@RequestMapping("/")
 	public String index() {
-		return "Greetings + Ho Ho from 🎅🏿!";
+    throw new RuntimeException("Tramps like us, baby we weren't born to run");
+		// return "Greetings + Ho Ho from 🎅🏿!";
 	}
 
 }

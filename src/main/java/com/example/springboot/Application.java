@@ -14,7 +14,8 @@ import org.springframework.boot.actuate.trace.http.InMemoryHttpTraceRepository;
 public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+    throw new RuntimeException("Je refuse. Tu le fait.");
+		//SpringApplication.run(Application.class, args);
 	}
 
 	@Bean
